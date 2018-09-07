@@ -7,7 +7,7 @@
   left: 0;
   z-index: -1;
 
-  min-height: $spacing-unit * 1.865;
+  min-height: 320px;
 }
 
 .site-logo {
@@ -47,16 +47,13 @@
   }
 }
 
-.site-nav-wrapper {
-  margin-top: -64px;
-  border-top: 4px solid #FA5A5D;
-  background: white;
-
-  top: 336px;
+.site-nav {
   position: relative;
+  top: 266px;
   z-index: 1;
 
-  .site-nav {
+  background: white;
+  border-top: 4px solid #FA5A5D;
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .page-link {
@@ -67,7 +64,16 @@
       margin-right: 20px;
     }
   }
-}
+
+  animation: border 1s ease-in;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    border-bottom: 1px solid $grey-color-light;
+  }
 }
 
 
