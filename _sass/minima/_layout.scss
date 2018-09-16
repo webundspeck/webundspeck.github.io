@@ -87,15 +87,27 @@
     transition: opacity 0.35s;
   }
 
+  .wrapper {
+    position: relative;
+  }
+
   .site-nav {
-    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 
-    .page-link {
-      color: $text-color;
-      line-height: $base-line-height;
+    .site-nav-links {
+      width: fit-content;
+      margin: auto;
 
-      &:not(:last-child) {
-        margin-right: 20px;
+      .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
       }
     }
   }
