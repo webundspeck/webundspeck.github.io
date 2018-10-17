@@ -87,30 +87,62 @@
     transition: opacity 0.35s;
   }
 
+  .site-social-links {
+    float: right;
+
+    a {
+      display: inline-block;
+      margin: 4px;
+    }
+
+    .fas {
+      color: #CCC;
+
+      -webkit-transition: color 0.35s;
+      -moz-transition: color 0.35s;
+      -o-transition: color 0.35s;
+      transition: color 0.35s;
+    }
+
+    a:hover {
+      .cfa-facebook .fas {
+        color: #3B5998;
+      }
+
+      .cfa-twitter .fas {
+        color: #1DA1F2;
+      }
+
+      .cfa-meetup .fas {
+        color: #e51937;
+      }
+    }
+  }
+
   .wrapper {
     position: relative;
   }
 
-  .site-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  // .site-nav {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
 
-    .site-nav-links {
-      width: fit-content;
-      margin: auto;
+  //   .site-nav-links {
+  //     width: fit-content;
+  //     margin: auto;
 
-      .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
+  //     .page-link {
+  //       color: $text-color;
+  //       line-height: $base-line-height;
 
-        &:not(:last-child) {
-          margin-right: 20px;
-        }
-      }
-    }
-  }
+  //       &:not(:last-child) {
+  //         margin-right: 20px;
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 
