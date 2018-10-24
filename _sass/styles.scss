@@ -1,0 +1,12 @@
+.columns {
+    display: flex;
+}
+
+.columns .column {
+    flex: 50%;
+    text-align: justify;
+}
+
+.columns .spacer {
+	padding: 0 15px 0 15px;
+}
