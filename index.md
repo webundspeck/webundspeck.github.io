@@ -4,3 +4,9 @@
 
 layout: home
 ---
+
+## About Section
+
+This is where the about stuff goes!
+
+![Bacon](https://unsplash.com/photos/B6Jt8Do599E/download?force=true)
