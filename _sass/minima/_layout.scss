@@ -94,33 +94,42 @@
       display: inline-block;
       margin: 4px;
     }
-
-    .fas {
-      color: #CCC;
-
-      -webkit-transition: color 0.35s;
-      -moz-transition: color 0.35s;
-      -o-transition: color 0.35s;
-      transition: color 0.35s;
-    }
-
-    a:hover {
-      .cfa-facebook .fas {
-        color: #3B5998;
-      }
-
-      .cfa-twitter .fas {
-        color: #1DA1F2;
-      }
-
-      .cfa-meetup .fas {
-        color: #e51937;
-      }
-    }
   }
 
   .wrapper {
     position: relative;
+  }
+}
+
+
+
+/**
+ * Site Icons
+ */
+.fas, .fab {
+  color: #CCC;
+
+  -webkit-transition: color 0.35s;
+  -moz-transition: color 0.35s;
+  -o-transition: color 0.35s;
+  transition: color 0.35s;
+}
+
+a:hover {
+  .fab.fa-facebook, .cfa-facebook .fas {
+    color: #3B5998;
+  }
+
+  .fab.fa-linkedin, .cfa-linkedin .fas {
+    color: #0077B5;
+  }
+
+  .fab.fa-twitter, .cfa-twitter .fas {
+    color: #1DA1F2;
+  }
+
+  .fab.fa-meetup, .cfa-meetup .fas {
+    color: #e51937;
   }
 }
 
@@ -251,6 +260,14 @@ hr {
     .family-member {
       display: inline-block;
       margin: 0 16px 16px 16px;
+
+      .fas {
+        color: #ccc;
+      }
+
+      a {
+        text-decoration: none;
+      }
 
       img {
         display: block;
