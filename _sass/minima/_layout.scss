@@ -122,27 +122,6 @@
   .wrapper {
     position: relative;
   }
-
-  // .site-nav {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-
-  //   .site-nav-links {
-  //     width: fit-content;
-  //     margin: auto;
-
-  //     .page-link {
-  //       color: $text-color;
-  //       line-height: $base-line-height;
-
-  //       &:not(:last-child) {
-  //         margin-right: 20px;
-  //       }
-  //     }
-  //   }
-  // }
 }
 
 
@@ -253,6 +232,35 @@
 .post-link {
   display: block;
   @include relative-font-size(1.5);
+}
+
+hr {
+  margin: 16px 0;
+  border: 1px solid #ddd;
+}
+
+
+
+/**
+ * Family Section
+ */
+.family {
+  .family-row {
+    text-align: center;
+
+    .family-member {
+      display: inline-block;
+      margin: 0 16px 16px 16px;
+
+      img {
+        display: block;
+        margin: 8px 0;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+      }
+    }
+  }
 }
 
 
