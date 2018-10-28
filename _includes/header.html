@@ -7,8 +7,9 @@
       <a class="site-logo" href="{{ "/" | relative_url }}">
         <img src="{{ "/assets/images/speckpersand.png" | relative_url }}" alt="">
         <div class="site-name">
-          <div>web</div>
-          <div>speck</div>
+          {%- assign name = site.title | split: ' ' -%}
+          <div>{{ name | first }}</div>
+          <div>{{ name | last }}</div>
         </div>
       </a>
     </div>
@@ -18,22 +19,22 @@
 <div id="site-sticky" class="site-sticky">
   <div class="wrapper">
     <div class="site-sticky-logo">
-      <span class="site-name">web & speck</span>
+      <span class="site-name">{{ site.title }}</span>
     </div>
     <div class="site-social-links">
-      <a href="https://www.facebook.com/webundspeck" class="social-link">
+      <a href="https://facebook.com/{{ site.facebook_username }}" class="social-link">
         <span class="fa-stack fa-lg cfa-facebook">
           <i class="fas fa-circle fa-stack-2x"></i>
           <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
         </span>
       </a>
-      <a href="https://twitter.com/webundspeck" class="social-link">
+      <a href="https://twitter.com/{{ site.twitter_username }}" class="social-link">
         <span class="fa-stack fa-lg cfa-twitter">
           <i class="fas fa-circle fa-stack-2x"></i>
           <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
         </span>
       </a>
-      <a href="https://www.meetup.com/webundspeck" class="social-link">
+      <a href="https://www.meetup.com/{{ site.meetup_username }}" class="social-link">
         <span class="fa-stack fa-lg cfa-meetup">
           <i class="fas fa-circle fa-stack-2x"></i>
           <i class="fab fa-meetup fa-stack-1x fa-inverse"></i>
