@@ -116,19 +116,19 @@
 }
 
 a:hover {
-  .fab.fa-facebook, .cfa-facebook .fas {
+  & > .fab.fa-facebook, .cfa-facebook .fas {
     color: #3B5998;
   }
 
-  .fab.fa-linkedin, .cfa-linkedin .fas {
+  & > .fab.fa-linkedin, .cfa-linkedin .fas {
     color: #0077B5;
   }
 
-  .fab.fa-twitter, .cfa-twitter .fas {
+  & > .fab.fa-twitter, .cfa-twitter .fas {
     color: #1DA1F2;
   }
 
-  .fab.fa-meetup, .cfa-meetup .fas {
+  & > .fab.fa-meetup, .cfa-meetup .fas {
     color: #e51937;
   }
 }
