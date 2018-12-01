@@ -62,7 +62,7 @@
   transition: border 1s;
 
   &.sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 
@@ -274,6 +274,34 @@ hr {
         margin: 16px 0;
         width: 128px;
         height: 128px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+
+
+/**
+ * Friends Section
+ */
+.friends {
+  .friends-row {
+    text-align: center;
+
+    .friends-member {
+      display: inline-block;
+      margin: 0 20px 8px 20px;
+
+      a {
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        margin: 16px 0;
+        width: 96px;
+        height: 96px;
         border-radius: 50%;
       }
     }
