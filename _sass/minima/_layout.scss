@@ -62,7 +62,7 @@
   transition: border 1s;
 
   &.sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 
@@ -94,55 +94,43 @@
       display: inline-block;
       margin: 4px;
     }
-
-    .fas {
-      color: #CCC;
-
-      -webkit-transition: color 0.35s;
-      -moz-transition: color 0.35s;
-      -o-transition: color 0.35s;
-      transition: color 0.35s;
-    }
-
-    a:hover {
-      .cfa-facebook .fas {
-        color: #3B5998;
-      }
-
-      .cfa-twitter .fas {
-        color: #1DA1F2;
-      }
-
-      .cfa-meetup .fas {
-        color: #e51937;
-      }
-    }
   }
 
   .wrapper {
     position: relative;
   }
+}
 
-  // .site-nav {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
 
-  //   .site-nav-links {
-  //     width: fit-content;
-  //     margin: auto;
 
-  //     .page-link {
-  //       color: $text-color;
-  //       line-height: $base-line-height;
+/**
+ * Site Icons
+ */
+.fas, .fab {
+  color: #CCC;
 
-  //       &:not(:last-child) {
-  //         margin-right: 20px;
-  //       }
-  //     }
-  //   }
-  // }
+  -webkit-transition: color 0.35s;
+  -moz-transition: color 0.35s;
+  -o-transition: color 0.35s;
+  transition: color 0.35s;
+}
+
+a:hover {
+  & > .fab.fa-facebook, .cfa-facebook .fas {
+    color: #3B5998;
+  }
+
+  & > .fab.fa-linkedin, .cfa-linkedin .fas {
+    color: #0077B5;
+  }
+
+  & > .fab.fa-twitter, .cfa-twitter .fas {
+    color: #1DA1F2;
+  }
+
+  & > .fab.fa-meetup, .cfa-meetup .fas {
+    color: #e51937;
+  }
 }
 
 
@@ -253,6 +241,71 @@
 .post-link {
   display: block;
   @include relative-font-size(1.5);
+}
+
+hr {
+  margin: 16px 0;
+  border: 1px solid #ddd;
+}
+
+
+
+/**
+ * Family Section
+ */
+.family {
+  .family-row {
+    text-align: center;
+
+    .family-member {
+      display: inline-block;
+      margin: 0 20px 8px 20px;
+
+      .fas {
+        color: #ccc;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        margin: 16px 0;
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+
+
+/**
+ * Friends Section
+ */
+.friends {
+  .friends-row {
+    text-align: center;
+
+    .friends-member {
+      display: inline-block;
+      margin: 0 20px 8px 20px;
+
+      a {
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        margin: 16px 0;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+      }
+    }
+  }
 }
 
 
